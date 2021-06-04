@@ -1,0 +1,312 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+::selection {
+    background-color: black;
+    color: white;
+}
+
+.text-yellow {
+    color: #FBC02D;
+}
+
+.header-section {
+    background-image: url("../images/header-bg.png");
+    background-size: 100%;
+    padding: 40px;
+}
+
+.navbar-brand p {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.navbar-nav .nav-link:focus {
+    background-color: #FBC02D;
+    color: black !important;
+    border-radius: 0.5rem;
+}
+
+.navbar-toggler {
+    border: 1px solid #FBC02D;
+}
+
+.navbar-collapse {
+    text-align: center;
+}
+
+.dropdown-menu {
+    background-color: #FFEE58;
+}
+
+.dropdown-divider {
+    border: 1px solid #FBC02D;
+}
+
+.header-info {
+    margin-top: 55px;
+}
+
+.header-info p {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.header-info span {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.header-info b {
+    letter-spacing: 7px;
+    font-size: 20px;
+}
+
+.header-info img {
+    position: relative;
+    width: 55%;
+    top: 120px;
+}
+
+.about-and-booking {
+    background-color: #FFC61A;
+    padding: 100px 20px 30px;
+}
+
+.about-and-booking h1, h4 {
+    font-weight: bold;
+}
+
+.about-and-booking p {
+    margin: 25px 0;
+}
+
+.about-and-booking button {
+    background-color: black;
+}
+
+.about-and-booking .card {
+    border: none
+}
+
+.about-and-booking .card-title {
+    background-color: black !important;
+}
+
+.about-and-booking .form-control{
+    border: 0;
+    border-bottom: 1px solid black;
+    border-radius: 0;
+}
+
+.about-and-booking  input::placeholder {
+    font-weight: bold;
+    color: black;
+}
+
+.tariffs {
+    padding: 50px 10px 30px;
+}
+
+.tariffs h3 {
+    font-weight: bold;
+}
+
+.tariffs .row {
+    margin-top: 150px;
+}
+
+.tariffs .card img {
+    position: absolute;
+    top: -100px;
+}
+
+.tariffs .card .card-body h3 {
+    margin-top: 80px;
+}
+
+.tariffs .card .card-body b {
+    font-size: 40px;
+}
+
+.tariffs .card .card-body button {
+    background-color: #FBC02D;
+    color: black;
+    font-weight: bold;
+}
+
+.tariffs .row .col-md-4:nth-child(2) .card {
+    background-color: #FBC02D;
+    position: relative;
+}
+
+.tariffs .row .col-md-4:nth-child(2) b {
+    color: black;
+}
+
+.tariffs .row .col-md-4:nth-child(2) .card .card-body button {
+    background-color: black;
+    color: white;
+}
+
+.tariffs .row .col-md-4:nth-child(2) .card-body + div {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: black;
+    width: 30px;
+    height: 30px;
+    color: #FBC02D;
+}
+
+
+.tariffs .row .col-md-4:nth-child(2) .card-body + div i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 15px;
+}
+
+@media(max-width: 1024px) {
+    .tariffs .card img {
+        top: -80px;
+    }
+}
+
+@media(max-width: 800px) {
+    .tariffs .card img {
+        top: -70px;
+    }
+
+    .tariffs .card .card-body h3 {
+        margin-top: 50px;
+    }
+
+    .tariffs .card img {
+        top: -45px;
+    }
+}
+
+@media(max-width: 767px) {
+    .dropdown-menu {
+        text-align: center;
+    }
+
+    .header-info img {
+        top: 100px;
+        width: 85%;
+    }
+
+    .header-section {
+        background-size: auto;
+    }
+
+    .about-and-booking .card {
+        margin-top: 20px;
+    }
+
+    .tariffs .row .col-md-4:first-child .card{
+        margin-top: 0;
+    }
+
+    .tariffs .card {
+        margin-top: 150px;
+    }
+
+    .tariffs .card .card-body h3 {
+        margin-top: 150px;
+    }
+}
+
+@media(max-width: 640px) {
+    .tariffs .card img {
+        top: -120px;
+    }
+}
+
+@media(max-width: 500px) {
+    .header-info {
+        margin-top: 30px;
+    }
+
+    .header-info p {
+        font-size: 28px;
+    }
+
+    .header-info span {
+        font-size: 32px;
+    }
+
+    .header-info b {
+        letter-spacing: 5px;
+        font-size: 12px;
+    }
+
+    .header-info img {
+        top: 75px;
+        width: 100%;
+    }
+
+    .about-and-booking {
+        padding: 50px 10px 30px;
+    }
+
+    .tariffs .card .card-body h3 {
+        margin-top: 120px;
+    }
+}
+
+@media(max-width: 414px) {
+    .tariffs .card img {
+        top: -100px;
+    }
+}
+
+@media(max-width: 384px) {
+    .tariffs .card img {
+        top: -75px;
+    }
+}
+
+@media(max-width: 375px) {
+    .tariffs .card .card-body h3 {
+        margin-top: 80px;
+    }
+}
+
+@media(max-width: 280px) {
+    .header-section {
+        padding: 10px;
+    }
+
+    .header-info b {
+        letter-spacing: 3px;
+        font-size: 10px;
+    }
+
+    .header-info img {
+        top: 50px;
+    }  
+
+    .tariffs .card {
+        margin-top: 70px;
+    }
+    
+    .tariffs .card img {
+        top: -50px;
+    }
+
+    .tariffs .card .card-body h3 {
+        margin-top: 50px;
+        font-size: 25px;
+    }
+
+    .tariffs .card .card-body b {
+        font-size: 30px;
+    }
+}
