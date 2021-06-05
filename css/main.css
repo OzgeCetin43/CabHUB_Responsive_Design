@@ -109,7 +109,7 @@
 }
 
 .tariffs {
-    padding: 50px 10px 30px;
+    padding: 50px 10px 100px;
 }
 
 .tariffs h3 {
@@ -170,6 +170,57 @@
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 15px;
+}
+
+.choose {
+    background-image: url("../images/choose-bg.png");
+}
+
+.choose .row {
+    margin: 100px 0px 20px;
+}
+
+.choose .row:nth-last-of-type(1) {
+    margin: 0px 0px 20px;
+}
+
+.choose i {
+    display: block;
+    background-color: #FFC61A;
+    color: black;
+    border-radius: 50%;
+    font-size: 28px;
+    padding: 20px;
+    width: 70px;
+    height: 70px;
+}
+
+.choose .row:nth-child(3) .col-md-6:nth-child(2) i {
+    font-size: 33px;
+    padding: 23px;
+}
+
+.choose .row:nth-child(4) .col-md-6:nth-child(1) i, .col-md-6:nth-child(2) i {
+    font-size: 30px;
+}
+
+.choose .choose-info {
+    padding-left: 20px;
+}
+
+.choose .choose-info h5 {
+    font-weight: bold;
+}
+
+.choose .choose-info p {
+    font-size: 20px;
+}
+
+.choose button {
+    background-color: #FFC61A;
+    color: black;
+    margin-top: 30px;
+    font-weight: bold;
 }
 
 @media(max-width: 1024px) {
@@ -259,6 +310,10 @@
     .tariffs .card .card-body h3 {
         margin-top: 120px;
     }
+
+    .choose .row {
+        margin: 80px 0px 20px;
+    }
 }
 
 @media(max-width: 414px) {
@@ -308,5 +363,13 @@
 
     .tariffs .card .card-body b {
         font-size: 30px;
+    }
+
+    .choose .choose-info h5 {
+        font-size: 18px;
+    }
+
+    .choose .choose-info p {
+        font-size: 15px;
     }
 }
