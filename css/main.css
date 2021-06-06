@@ -141,7 +141,6 @@
 
 .tariffs .row .col-md-4:nth-child(2) .card {
     background-color: #FBC02D;
-    position: relative;
 }
 
 .tariffs .row .col-md-4:nth-child(2) b {
@@ -163,7 +162,6 @@
     color: #FBC02D;
 }
 
-
 .tariffs .row .col-md-4:nth-child(2) .card-body + div i {
     position: absolute;
     top: 50%;
@@ -184,24 +182,18 @@
     margin: 0px 0px 20px;
 }
 
-.choose i {
-    display: block;
+.choose .icon-area {
     background-color: #FFC61A;
     color: black;
     border-radius: 50%;
-    font-size: 28px;
     padding: 20px;
     width: 70px;
     height: 70px;
 }
 
-.choose .row:nth-child(3) .col-md-6:nth-child(2) i {
-    font-size: 33px;
-    padding: 23px;
-}
-
-.choose .row:nth-child(4) .col-md-6:nth-child(1) i, .col-md-6:nth-child(2) i {
-    font-size: 30px;
+.choose .icon-area img {
+    width: 30px;
+    height: 30px;
 }
 
 .choose .choose-info {
@@ -223,6 +215,73 @@
     font-weight: bold;
 }
 
+.download {
+    margin: 50px 20px 20px;
+}
+
+.download h3 {
+    font-weight: bolder;
+    margin: 0;
+}
+
+.download .container {
+    margin-top: 75px;
+    text-align: left;
+}
+
+.download .container h4 {
+    margin: 20px 0;
+}
+
+.download .container p {
+    margin: 20px 0;
+    line-height: 1.5;
+}
+
+.download .container button {
+    background-color: black;
+    padding: 10px 20px;
+    margin-right: 20px;
+    color: white;
+}
+
+.download .container .image {
+    width: 100%;
+}
+
+.testimonials {
+    background-image: url("../images/testimonials-bg.png");
+    padding: 100px 0 20px;
+}
+
+.testimonials .container {
+    margin-top: 100px;
+}
+
+.testimonials .container .testimonial {
+    background-color: black;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.testimonials .container .testimonial .testimonial-info p {
+    font-weight: bolder;
+}
+
+.testimonials .container .testimonial .testimonial-info p:first-child {
+    font-size: 20px;
+}
+
+.call {
+    background-color: #FFC61A;
+    padding: 30px 0;
+}
+
+.call * {
+    font-weight: bolder;
+    margin: 10px 0;
+}
+
 @media(max-width: 1024px) {
     .tariffs .card img {
         top: -80px;
@@ -230,6 +289,10 @@
 }
 
 @media(max-width: 800px) {
+    .tariffs .row {
+        margin-top: 120px;
+    }
+
     .tariffs .card img {
         top: -70px;
     }
@@ -240,6 +303,15 @@
 
     .tariffs .card img {
         top: -45px;
+    }
+
+    .download .container button {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .testimonials .container {
+        margin-top: 50px;
     }
 }
 
@@ -253,12 +325,12 @@
         width: 85%;
     }
 
-    .header-section {
-        background-size: auto;
-    }
-
     .about-and-booking .card {
         margin-top: 20px;
+    }
+
+    .tariffs {
+        padding-bottom: 50px;
     }
 
     .tariffs .row .col-md-4:first-child .card{
@@ -272,11 +344,29 @@
     .tariffs .card .card-body h3 {
         margin-top: 150px;
     }
+
+    .download .container {
+        margin-top: 50px;
+    }
+
+    .download .container .image {
+        margin-top: 20px;
+    }
+
+    .download .container .row .col-md-5:nth-child(2) {
+        display: none;
+    }
 }
 
 @media(max-width: 640px) {
     .tariffs .card img {
         top: -120px;
+    }
+
+    .testimonials .container .testimonial {
+        width: 90%;
+        margin: auto;
+        margin-top: 10px;
     }
 }
 
@@ -314,6 +404,22 @@
     .choose .row {
         margin: 80px 0px 20px;
     }
+
+    .download {
+        margin: 20px 10px;
+    }
+
+    .download .container {
+        margin-top: 15px;
+    }
+
+    .download .container button {
+        padding: 10px;
+    }
+
+    .download .container .row .col-md-5 {
+        margin-top: 20px;
+    }    
 }
 
 @media(max-width: 414px) {
@@ -371,5 +477,9 @@
 
     .choose .choose-info p {
         font-size: 15px;
+    }
+
+    .testimonials h1 {
+        font-size: 30px;
     }
 }
