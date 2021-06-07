@@ -340,6 +340,10 @@ footer .contacts i {
     height: 10px;
 }
 
+footer .right {
+    font-size: 10px;
+}
+
 @media(max-width: 1024px) {
     .tariffs .card img {
         top: -80px;
@@ -433,6 +437,10 @@ footer .contacts i {
 }
 
 @media(max-width: 500px) {
+    .navbar {
+        padding: 0;
+    }
+    
     .header-info {
         margin-top: 30px;
     }
